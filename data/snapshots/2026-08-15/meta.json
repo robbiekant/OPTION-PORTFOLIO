@@ -1,0 +1,21 @@
+{
+  "stamp": "2026-08-15",
+  "fetched_at": "2026-08-15T18:39:00",
+  "providers_online": [
+    "ibkr (via connector)"
+  ],
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "SMH",
+    "FXI",
+    "TLT",
+    "GLD",
+    "SLV",
+    "/GC",
+    "/CL"
+  ],
+  "chains": {},
+  "note": "Seed snapshot. Underlying spot/IV/HV/IV-percentile are live IBKR values as of the 2026-08-14 close. Option leg premiums are model-priced from these inputs until a gateway pull supplies live chains."
+}
