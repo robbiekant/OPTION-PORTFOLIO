@@ -178,7 +178,6 @@ def prob_otm(S: float, K: float, T: float, sigma: float, kind: str,
     """Risk-neutral probability the option finishes out of the money."""
     if T <= 0 or sigma <= 0:
         return 1.0 if ((kind == "put" and S > K) or (kind == "call" and S < K)) else 0.0
-    _, d2 = _d1_d2(S, K, T, sigma, sigma)
     _, d2 = _d1_d2(S, K, T, r, sigma)
     return norm.cdf(d2) if kind == "put" else norm.cdf(-d2)
 
